@@ -1,0 +1,14 @@
+@import "./fonts";
+@import "./main";
+@import "./variables";
+
+@import "../components/basic/button/button.scss";
+@import "../components/basic/link/link.scss";
+@import "../components/basic/input/input.scss";
+@import "../components/basic/input-profile/input-profile.scss";
+@import "../components/basic/error/error.scss";
+@import "../components/basic/dialog/dialog.scss";
+
+@import "../components/pages/auth/auth.scss";
+@import "../components/pages/chats/chats.scss";
+@import "../components/pages/profile/profile.scss";
