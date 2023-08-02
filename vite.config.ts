@@ -18,8 +18,8 @@ export default {
 		rollupOptions: {
 			input: {
 				index: resolve(__dirname, "index.html"),
-				404: resolve(__dirname, "./src/components/pages/404/404.html"),
-				500: resolve(__dirname, "./src/components/pages/500/500.html"),
+				page404: resolve(__dirname, "./src/components/pages/page404/page404.html"),
+				page500: resolve(__dirname, "./src/components/pages/page500/page500.html"),
 				auth: resolve(__dirname, "./src/components/pages/auth/auth.html"),
 				chats: resolve(__dirname, "./src/components/pages/chats/chats.html"),
 				profile: resolve(__dirname, "./src/components/pages/profile/profile.html"),
