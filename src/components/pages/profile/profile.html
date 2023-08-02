@@ -1,0 +1,30 @@
+{{> main}}
+
+<a class="link-back" href="../chats/chats.html">
+	<img src="../../../assets/imgs/arrow-back.svg" alt="Arrow back" />
+</a>
+
+<main class="center">
+	<form class="profile" action="">
+		<div class="profile__avatar">
+			<img src="../../../assets/imgs/avatar-default.svg" alt="Avatar" />
+		</div>
+		<div class="profile__name">Иван</div>
+		<div class="profile__fields">
+			{{> input-profile labelValue="Почта" inputType="text" inputName="email"
+			inputValue="pochta@yandex.ru"}} {{> input-profile labelValue="Логин" inputType="text"
+			inputName="login" inputValue="ivanivanov"}} {{> input-profile labelValue="Имя"
+			inputType="text" inputName="first_name" inputValue="Иван"}} {{> input-profile
+			labelValue="Фамилия" inputType="text" inputName="second_name" inputValue="Иванов"}} {{>
+			input-profile labelValue="Имя в чате" inputType="text" inputName="display_name"
+			inputValue="Иван"}} {{> input-profile labelValue="Телефон" inputType="tel"
+			inputName="phone" inputValue="+7 (123) 456 78 90"}}
+		</div>
+		<div class="profile__links">
+			{{> link linkClass="profile__link" href="#" linkText="Изменить данные"}} {{> link
+			linkClass="profile__link" href="../profile_edit_pwd/profile_edit_pwd.html"
+			linkText="Изменить пароль"}} {{> link linkClass="profile__link profile__link--exit"
+			href="#" linkText="Выйти"}}
+		</div>
+	</form>
+</main>

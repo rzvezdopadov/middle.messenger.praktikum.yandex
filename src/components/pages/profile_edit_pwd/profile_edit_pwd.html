@@ -1,0 +1,21 @@
+{{> main}}
+
+<a class="link-back" href="../profile/profile.html">
+	<img src="../../../assets/imgs/arrow-back.svg" alt="Arrow back" />
+</a>
+
+<main class="center">
+	<form class="profile" action="">
+		<div class="profile__avatar">
+			<img src="../../../assets/imgs/avatar-default.svg" alt="Avatar" />
+		</div>
+		<div class="profile__fields">
+			{{> input-profile labelValue="Старый пароль" inputType="password"
+			inputName="oldPassword" inputValue="•••••••••"}} {{> input-profile labelValue="Новый
+			пароль" inputType="password" inputName="newPassword" inputValue="•••••••••••"}} {{>
+			input-profile labelValue="Повторите новый пароль" inputType="password"
+			inputName="newPassword" inputValue="•••••••••••"}}
+		</div>
+		{{> button btnType="submit" btnText="Сохранить"}}
+	</form>
+</main>

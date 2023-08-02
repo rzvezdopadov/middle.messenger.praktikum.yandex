@@ -67,14 +67,24 @@
       background-color: $line;
     }
   }
+  &__profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  &__arrow {
+    width: 8px;
+    height: 8px;
+  }
   &__link {
-    margin-bottom: 23px;
     font-size: 12px;
     line-height: 12px;
     color: $text-gray;
     text-align: right;
     &::after {
-      content: url("../../static/img/arrow-dialogs.svg");
       vertical-align: top;
       margin-left: 8px;
     }
@@ -101,7 +111,7 @@
     &--label {
       position: absolute;
       top: 50%;
-      left: 112px;
+      left: 30%;
       padding: 10px;
       transform: translateY(-50%);
       pointer-events: none;
@@ -137,7 +147,8 @@
       background-color: $msg-bg;
     }
     &--out {
-      align-self: end;
+      margin-left: auto;
+      width: fit-content;
       border-radius: 12px 12px 0;
       background-color: $msg-my-bg;
     }
